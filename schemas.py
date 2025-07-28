@@ -15,5 +15,5 @@ class UserOut(BaseModel):
     id: int
     email: EmailStr
     name: str
-    coins_earned: int
+    coins: int
     creation_date: datetime
