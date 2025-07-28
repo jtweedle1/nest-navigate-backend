@@ -9,7 +9,7 @@ class User(Base):
     id = Column(Integer, primary_key=True, index=True) #index=True speeds up search/filter on a column
     name = Column(String, unique=True, index=True)
     email = Column(String, unique=True)
-    password = Column(String) #TO-DO: hash passwords
+    hashed_password = Column(String) #TO-DO: hash passwords
     coins = Column(Integer, default=0)
     creation_date = Column(DateTime, default=datetime.timezone.utc)
 
